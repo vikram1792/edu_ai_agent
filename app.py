@@ -44,7 +44,7 @@ if st.button("Generate Study Material", use_container_width=True):
         st.success("Study Material Ready!")
         st.markdown("### Output Preview")
         st.markdown(
-            f"<div style='white-space:pre-wrap;word_wrap:break-word;background-color:#f0f0f0;padding:10px;border-radius:5px;'>{output_text[:5000]}<br><br>...(truncated)</div>",
+            f"<div style='white-space:pre-wrap;word_wrap:break-word;background-color:#f0f0f0;padding:10px;border-radius:5px;'>{output_text[:10000]}<br><br>...(truncated)</div>",
         unsafe_allow_html=True
         )
 
