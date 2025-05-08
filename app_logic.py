@@ -124,7 +124,7 @@ llm = ChatOpenAI(model="gpt-4o-mini", temperature=0.3, openai_api_key=openai_api
 
 # === Summarizer Node ===
 def summarize_text(text: str) -> str:
-    prompt = f"""Summarize the following text in about 250 words for a government exam aspirant. make a combined summary from all sources . Use clear and factual language:\n\n{text}"""
+    prompt = f"""Summarize the following text in about 300 words for a government exam aspirant. make a combined summary from all sources . Use clear and factual language:\n\n{text}"""
     return llm.invoke(prompt).content
 
 def summarizer_node(state: GraphState) -> dict:
